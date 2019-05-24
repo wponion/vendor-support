@@ -1,0 +1,27 @@
+{
+  "name"        : "wponion/vendor-support",
+  "version"     : "1.0",
+  "description" : "This Plugin Provides A Local Copy of All Javascript / CSS Librarys That Are Used By WPOnion",
+  "type"        : "library",
+  "time"        : "",
+  "support"     : {
+    "email"  : "varunsridharan23@gmail.com",
+    "docs"   : "https://docs.wponion.com",
+    "issues" : "https://github.com/wponion/vendor-support/issues",
+    "source" : "https://github.com/wponion/vendor-support"
+  },
+  "homepage"    : "https://github.com/wponion/vendor-support",
+  "license"     : "GPL-3.0-or-later",
+  "keywords"    : [ ],
+  "autoload"    : {
+    "files" : [ "index.php" ]
+  },
+  "authors"     : [
+    {
+      "name"     : "Varun Sridharan",
+      "email"    : "varunsridharan23@gmail.com",
+      "homepage" : "http://varunsridharan.in",
+      "role"     : "Developer"
+    }
+  ]
+}
