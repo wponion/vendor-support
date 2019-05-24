@@ -33,19 +33,19 @@ if ( ! class_exists( 'WPOnion_Vendor_Support' ) ) {
 			/**
 			 * Scripts.
 			 */
-			self::$scripts['chosen']    = self::url( 'vendors/chosen/chosen.jquery.min.js' );
-			self::$scripts['flatpickr'] = self::url( 'vendors/flatpickr/script.js' );
-			self::$scripts['select2']   = self::url( 'vendors/select2/select2.full.min.js' );
-			self::$scripts['selectize'] = self::url( 'vendors/selectize/selectize.js' );
-			self::$scripts['inputmask'] = self::url( 'vendors/inputmask/jquery.inputmask.bundle.min.js' );
+			self::$scripts['chosen']             = self::url( 'vendors/chosen/chosen.jquery.min.js' );
+			self::$scripts['wponion-datepicker'] = self::url( 'vendors/flatpickr/script.js' );
+			self::$scripts['select2']            = self::url( 'vendors/select2/select2.full.min.js' );
+			self::$scripts['selectize']          = self::url( 'vendors/selectize/selectize.js' );
+			self::$scripts['wponion-inputmask']  = self::url( 'vendors/inputmask/jquery.inputmask.bundle.min.js' );
 
 			/**
 			 * Styles.
 			 */
-			self::$scripts['chosen']    = self::url( 'vendors/chosen/chosen.min.css' );
-			self::$scripts['flatpickr'] = self::url( 'vendors/flatpickr/style.css' );
-			self::$scripts['select2']   = self::url( 'vendors/select2/select2.min.css' );
-			self::$scripts['selectize'] = self::url( 'vendors/selectize/selectize.css' );
+			self::$scripts['chosen']             = self::url( 'vendors/chosen/chosen.min.css' );
+			self::$scripts['wponion-datepicker'] = self::url( 'vendors/flatpickr/style.css' );
+			self::$scripts['select2']            = self::url( 'vendors/select2/select2.min.css' );
+			self::$scripts['selectize']          = self::url( 'vendors/selectize/selectize.css' );
 		}
 
 		/**
