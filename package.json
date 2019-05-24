@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "chosen-js": "^1.8.7",
+    "easy-gulp-tasker": "^1.0.8",
+    "flatpickr": "^4.5.7",
+    "geocomplete": "^1.7.0",
+    "inputmask": "^4.0.8",
+    "jquery-validation": "^1.19.0",
+    "select2": "^4.0.7",
+    "selectize.js": "^0.12.12"
+  }
+}
