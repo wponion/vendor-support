@@ -5,6 +5,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
+# [Beta : 1.1] - 24/05/2019
+## Fixed
+* `wponion-` string prefixed for inputmask
+* changed `flatpickr` to `wponion-datepicker`
+
+---
+
 # [Beta : 1.0] - 24/05/2019
 ## Added
 1. Chosen JS - 1.8.7
@@ -15,4 +22,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ---
 
 
+[Beta : 1.1]: https://github.com/wponion/vendor-support/releases/tag/1.1
 [Beta : 1.0]: https://github.com/wponion/vendor-support/releases/tag/1.0
