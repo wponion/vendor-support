@@ -40,13 +40,6 @@ $files[ 'src/scss/pickr/pickr.scss' ] = {
 	rename: 'pickr.css',
 	watch: true,
 };
-$files[ 'src/js/pickr/pickr.js' ]     = {
-	dist: 'vendors/pickr/',
-	combine_files: true,
-	webpack: 'webpack_pickr',
-	rename: 'pickr.js',
-	watch: true,
-};
 module.exports                        = {
 	files: $files,
 	config: {

@@ -15,6 +15,7 @@ let $filesToCopy = {
 	'./node_modules/chosen-js/*.min.css': 'chosen/',
 	'./node_modules/chosen-js/*.png': 'chosen/',
 	'./node_modules/inputmask/dist/min/*.js': 'inputmask',
+	'./node_modules/@simonwep/pickr/dist/pickr.es5.min.js': 'pickr',
 };
 
 $gulp.task( 'copy', ( callback ) => {
