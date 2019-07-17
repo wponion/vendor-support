@@ -1,6 +1,5 @@
-let $files = {};
-
-$files[ 'src/scss/selectize.scss' ] = {
+let $files                            = {};
+$files[ 'src/scss/selectize.scss' ]   = {
 	dist: 'vendors/selectize/',
 	combine_files: true,
 	scss: true,
@@ -9,15 +8,14 @@ $files[ 'src/scss/selectize.scss' ] = {
 	rename: 'selectize.css',
 	watch: true,
 };
-$files[ 'src/js/selectize.js' ]     = {
+$files[ 'src/js/selectize.js' ]       = {
 	dist: 'vendors/selectize/',
 	combine_files: true,
 	uglify: true,
 	rename: 'selectize.js',
 	watch: true,
 };
-
-$files[ 'src/scss/flatpickr.scss' ] = {
+$files[ 'src/scss/flatpickr.scss' ]   = {
 	dist: 'vendors/flatpickr/',
 	combine_files: true,
 	scss: true,
@@ -26,15 +24,30 @@ $files[ 'src/scss/flatpickr.scss' ] = {
 	rename: 'style.css',
 	watch: true,
 };
-$files[ 'src/js/flatpickr.js' ]     = {
+$files[ 'src/js/flatpickr.js' ]       = {
 	dist: 'vendors/flatpickr/',
 	combine_files: true,
 	uglify: true,
 	rename: 'script.js',
 	watch: true,
 };
-
-module.exports = {
+$files[ 'src/scss/pickr/pickr.scss' ] = {
+	dist: 'vendors/pickr/',
+	combine_files: true,
+	scss: true,
+	autoprefixer: true,
+	minify: true,
+	rename: 'pickr.css',
+	watch: true,
+};
+$files[ 'src/js/pickr/pickr.js' ]     = {
+	dist: 'vendors/pickr/',
+	combine_files: true,
+	webpack: 'webpack_pickr',
+	rename: 'pickr.js',
+	watch: true,
+};
+module.exports                        = {
 	files: $files,
 	config: {
 		combine_files: {
@@ -42,5 +55,22 @@ module.exports = {
 			prepend: 'wponion-prepend',
 			inline: 'wponion-inline',
 		},
+		webpack_pickr: {
+			mode: 'production',
+			output: { filename: '[name].js', },
+			target: 'node',
+			module: {
+				rules: [
+					{
+						test: /\.js$/,
+						loader: 'babel-loader',
+						options: {
+							presets: [ '@babel/preset-env' ],
+							plugins: [ 'module:@babel/plugin-proposal-class-properties' ]
+						}
+					}
+				]
+			},
+		}
 	}
 };

@@ -1,12 +1,17 @@
 {
+  "scripts": {
+    "postinstall": "gulp compile && gulp copy"
+  },
   "devDependencies": {
-    "chosen-js": "^1.8.7",
-    "easy-gulp-tasker": "^1.0.10",
-    "flatpickr": "^4.6.2",
-    "geocomplete": "^1.7.0",
-    "inputmask": "^4.0.8",
-    "jquery-validation": "^1.19.1",
-    "select2": "^4.0.7",
-    "selectize.js": "^0.12.12"
+    "chosen-js": "1.8.7",
+    "easy-gulp-tasker": "1.0.10",
+    "flatpickr": "4.6.2",
+    "geocomplete": "1.7.0",
+    "inputmask": "4.0.8",
+    "jquery-validation": "1.19.1",
+    "select2": "4.0.7",
+    "selectize.js": "0.12.12",
+    "@simonwep/pickr": "1.2.1",
+    "@babel/plugin-proposal-class-properties": "^7.5.0"
   }
 }

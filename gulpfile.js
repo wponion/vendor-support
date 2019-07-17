@@ -17,12 +17,12 @@ let $filesToCopy = {
 	'./node_modules/inputmask/dist/min/*.js': 'inputmask',
 };
 
-$gulp.task( 'copy', () => {
+$gulp.task( 'copy', ( callback ) => {
 	let $x;
 	for( $x in $filesToCopy ) {
 		let $dist_path = $filesToCopy[ $x ];
 		$gulp.src( $x )
 			 .pipe( $gulp.dest( $assets_path + $dist_path ) );
 	}
-
+	callback();
 } );
