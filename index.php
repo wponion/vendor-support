@@ -11,5 +11,5 @@
  */
 
 add_action( 'wponion_before_addons_load', function () {
-	wponion_register_addon( __( 'WPOnion Vendor Support' ), '1.3', __DIR__ . '/class-vendor-support.php' );
+	wponion_register_addon( __( 'WPOnion Vendor Support' ), '1.3.1', __DIR__ . '/class-vendor-support.php' );
 } );
