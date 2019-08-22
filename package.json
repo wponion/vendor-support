@@ -9,7 +9,7 @@
     "geocomplete": "1.7.0",
     "inputmask": "4.0.8",
     "jquery-validation": "1.19.1",
-    "select2": "4.0.8",
+    "select2": "4.0.9",
     "selectize.js": "0.12.12",
     "@simonwep/pickr": "1.2.7",
     "@babel/plugin-proposal-class-properties": "^7.5.5"
