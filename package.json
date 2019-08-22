@@ -4,7 +4,7 @@
   },
   "devDependencies": {
     "chosen-js": "1.8.7",
-    "easy-gulp-tasker": "1.0.10",
+    "easy-gulp-tasker": "1.0.12",
     "flatpickr": "4.6.2",
     "geocomplete": "1.7.0",
     "inputmask": "4.0.8",
