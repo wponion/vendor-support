@@ -12,22 +12,16 @@ if ( ! class_exists( 'WPOnion_Vendor_Support' ) ) {
 		 * Stores All Script Informations.
 		 *
 		 * @var array
-		 * @access
-		 * @static
 		 */
 		protected static $scripts = array();
 
 		/**
 		 * @var array
-		 * @access
-		 * @static
 		 */
 		protected static $styles = array();
 
 		/**
 		 * Stores All Basic Information.
-		 *
-		 * @static
 		 */
 		public static function init() {
 			/**
@@ -55,7 +49,6 @@ if ( ! class_exists( 'WPOnion_Vendor_Support' ) ) {
 		 *
 		 * @param $extra
 		 *
-		 * @static
 		 * @return string
 		 */
 		protected static function url( $extra ) {
@@ -67,7 +60,6 @@ if ( ! class_exists( 'WPOnion_Vendor_Support' ) ) {
 		 *
 		 * @param $key
 		 *
-		 * @static
 		 * @return bool|mixed
 		 */
 		public static function script( $key ) {
@@ -79,7 +71,6 @@ if ( ! class_exists( 'WPOnion_Vendor_Support' ) ) {
 		 *
 		 * @param $key
 		 *
-		 * @static
 		 * @return bool|mixed
 		 */
 		public static function style( $key ) {

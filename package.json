@@ -1,10 +1,13 @@
 {
   "scripts": {
-    "postinstall": "gulp compile && gulp copy"
+    "postinstall": "gulp compile && gulp copy",
+    "build": "rollup -c",
+    "watch": "sofy --compile",
+    "dev": "rollup -c --watch"
   },
   "devDependencies": {
     "chosen-js": "1.8.7",
-    "easy-gulp-tasker": "1.0.15",
+    "sofy": "^1.0.7",
     "flatpickr": "4.6.9",
     "geocomplete": "1.7.0",
     "inputmask": "5.0.5",

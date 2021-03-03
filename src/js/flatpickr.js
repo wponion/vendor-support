@@ -1,11 +1,19 @@
-//@wponion-append ../../node_modules/flatpickr/dist/flatpickr.js
-// @ wponion-append ../../node_modules/flatpickr/dist/l10n/*.js
-// @ wponion-append ../../node_modules/flatpickr/dist/plugins/*.js
+import flatpickr from "flatpickr";
+import rangePlugin from "flatpickr/dist/esm/plugins/rangePlugin";
+import scrollPlugin from "flatpickr/dist/esm/plugins/scrollPlugin";
+import minMaxTimePlugin from "flatpickr/dist/esm/plugins/minMaxTimePlugin";
+import confirmDate from "flatpickr/dist/esm/plugins/confirmDate/confirmDate";
+import monthSelect from "flatpickr/dist/esm/plugins/monthSelect/index";
+import labelPlugin from "flatpickr/dist/esm/plugins/labelPlugin/labelPlugin";
+import weekSelect from "flatpickr/dist/esm/plugins/weekSelect/weekSelect";
 
-//@wponion-append ../../node_modules/flatpickr/dist/plugins/minMaxTimePlugin.js
-//@wponion-append ../../node_modules/flatpickr/dist/plugins/rangePlugin.js
-//@wponion-append ../../node_modules/flatpickr/dist/plugins/scrollPlugin.js
-//@wponion-append ../../node_modules/flatpickr/dist/plugins/confirmDate/confirmDate.js
-//@wponion-append ../../node_modules/flatpickr/dist/plugins/monthSelect/index.js
-//@wponion-append ../../node_modules/flatpickr/dist/plugins/labelPlugin/labelPlugin.js
-//@wponion-append ../../node_modules/flatpickr/dist/plugins/weekSelect/weekSelect.js
+( ( window ) => {
+	window.flatpickr   = flatpickr;
+	window.scrollPlugin = scrollPlugin;
+	window.rangePlugin = rangePlugin;
+	window.minMaxTimePlugin = minMaxTimePlugin;
+	window.confirmDate = confirmDate;
+	window.monthSelect = monthSelect;
+	window.labelPlugin = labelPlugin;
+	window.weekSelect = weekSelect;
+} )( window );
