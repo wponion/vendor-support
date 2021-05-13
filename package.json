@@ -14,7 +14,7 @@
     "jquery-validation": "1.19.3",
     "select2": "4.0.13",
     "selectize.js": "0.12.12",
-    "@simonwep/pickr": "1.8.0",
+    "@simonwep/pickr": "1.8.1",
     "@babel/plugin-proposal-class-properties": "^7.13.0"
   }
 }
