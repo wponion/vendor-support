@@ -15,6 +15,6 @@
     "select2": "4.0.13",
     "selectize.js": "0.12.12",
     "@simonwep/pickr": "1.8.0",
-    "@babel/plugin-proposal-class-properties": "^7.13.0"
+    "@babel/plugin-proposal-class-properties": "^7.14.5"
   }
 }
